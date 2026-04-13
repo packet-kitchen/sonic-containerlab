@@ -1,1 +1,1 @@
-This is a personal repo with files used to learn containerlab, especially with various distributions of SONiC NOS.
+A personal learning lab for exploring Containerlab with various SONiC distributions. This repo contains topology definitions, SONiC config_db.json files and supporting files used for hands-on experimentation with datacenter networking concepts.
