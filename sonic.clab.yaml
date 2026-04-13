@@ -1,0 +1,18 @@
+name: sonic_lab
+
+mgmt:
+ network: mgmt-net
+ ipv4-subnet: 192.168.100.0/24 #mgmt network address
+
+topology:
+  nodes:
+    sonic-01:
+      kind: sonic-vm
+      image: vrnetlab/sonic_sonic-vs:master
+    sonic-02:
+      kind: sonic-vm
+      image: vrnetlab/sonic_sonic-vs:master
+
+  links:
+    - endpoints: ["sonic-01:eth1", "sonic-02:eth1"]
+
